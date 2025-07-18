@@ -107,6 +107,10 @@ body {
   white-space: nowrap; /* щоб текст не переносився */
 }
 
+.header-btn:hover {
+  background: #7181fc;
+}
+
 .hero {
   /* display: flex;
   justify-content: space-between; */
@@ -174,6 +178,10 @@ body {
   color: #fff;
 }
 
+.hero-btn:hover {
+  background: #7181fc;
+}
+
 .hero-img {
   position: absolute;
   top: 100px;
@@ -197,6 +205,7 @@ body {
   color: #333;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   max-width: 483px;
+  padding-bottom: 60px;
 }
 
 .start-title span {
@@ -208,19 +217,29 @@ body {
 .start-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 64px;
+  /* display: grid; */
+
+  /* gap: 80px; */
+  justify-content: space-between;
+
+  /* grid-template-columns: 1fr 2fr 2fr 1fr; */
 }
 .start-item {
   border: 2px solid #6248ff;
   border-radius: 30px;
   padding: 32px;
   max-width: 483px;
+  max-height: fit-content;
 
   flex: 0 0 45%;
   box-sizing: border-box;
   position: relative;
 }
 
+.start-item:nth-child(even) {
+  margin-top: 100px;
+  margin-left: auto;
+}
 .start-number {
   font-family: var(--font-family);
   font-weight: 500;
@@ -234,4 +253,139 @@ body {
   color: #333;
 }
 .start-text {
+}
+
+/* Reviews  */
+
+.reviews-div {
+  display: flex;
+  /* gap: 40px; */
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.reviews-left {
+  flex-shrink: 0;
+  /* max-width: 483px; */
+  border-radius: 100%;
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #e0e0e0;
+}
+
+.reviews-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.reviews-right {
+  flex: 1;
+  position: relative;
+  border-radius: 100%;
+  fill: #fff;
+  stroke-width: 1px;
+  stroke: #6248ff;
+}
+
+.reviews {
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-left: 120px;
+  padding-bottom: 140px;
+}
+.container {
+}
+.btn-wrap {
+}
+.btn {
+}
+.btn:hover {
+  border: #6248ff;
+}
+.btn-go-left {
+}
+.arrow-icon {
+}
+.btn-go-right {
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.reviews-list {
+}
+.swiper-slide {
+}
+.list-item {
+}
+.person-avatar {
+}
+.person-name {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  color: #333;
+}
+.person-job {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  color: #4f4f4f;
+}
+.icon-person {
+}
+.icons {
+}
+.person-review {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: #333;
+  max-width: 585px;
+  height: auto;
+}
+.text {
+}
+.pages {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  color: #6248ff;
+  padding-top: 31px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #6248ff;
+  font-weight: 600;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.swiper-pagination-current,
+.swiper-pagination-total {
+  font-weight: 700;
 }
