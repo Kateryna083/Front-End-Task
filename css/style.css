@@ -252,8 +252,6 @@ body {
   font-size: 24px;
   color: #333;
 }
-.start-text {
-}
 
 /* Reviews  */
 
@@ -296,33 +294,11 @@ body {
   padding-left: 120px;
   padding-bottom: 140px;
 }
-.container {
-}
-.btn-wrap {
-}
-.btn {
-}
+
 .btn:hover {
   border: #6248ff;
 }
-.btn-go-left {
-}
-.arrow-icon {
-}
-.btn-go-right {
-}
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.reviews-list {
-}
-.swiper-slide {
-}
-.list-item {
-}
-.person-avatar {
-}
+
 .person-name {
   font-family: var(--font-family);
   font-weight: 500;
@@ -337,10 +313,7 @@ body {
   line-height: 169%;
   color: #4f4f4f;
 }
-.icon-person {
-}
-.icons {
-}
+
 .person-review {
   font-family: var(--font-family);
   font-weight: 500;
