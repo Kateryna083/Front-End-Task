@@ -24,7 +24,7 @@ li {
 h1,
 h2,
 h3,
-p {
+h4 p {
   margin: 0;
 }
 .visually-hidden {
@@ -191,6 +191,8 @@ body {
   z-index: 1;
 }
 
+/* Start */
+
 .start {
   max-width: 950px;
   padding-top: 140px;
@@ -215,12 +217,7 @@ body {
 .start-list {
   display: flex;
   flex-wrap: wrap;
-  /* display: grid; */
-
-  /* gap: 80px; */
   justify-content: space-between;
-
-  /* grid-template-columns: 1fr 2fr 2fr 1fr; */
 }
 .start-item {
   border: 2px solid #6248ff;
@@ -253,44 +250,49 @@ body {
 
 /* Reviews  */
 
+.reviews {
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 54px;
+  padding-left: 120px;
+  padding-bottom: 140px;
+}
+
 .reviews-div {
   display: flex;
-  /* gap: 40px; */
   align-items: flex-start;
-  justify-content: space-between;
+  gap: 60px;
+
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .reviews-left {
-  flex-shrink: 0;
-  /* max-width: 483px; */
-  border-radius: 100%;
-  fill: #fff;
-  stroke-width: 1px;
-  stroke: #e0e0e0;
+  flex: 0 0 400px;
 }
-
 .reviews-title {
   font-size: 48px;
   font-weight: 700;
+}
+.btw-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
 }
 
 .reviews-right {
   flex: 1;
   position: relative;
-  border-radius: 100%;
-  fill: #fff;
-  stroke-width: 1px;
-  stroke: #6248ff;
 }
 
-.reviews {
-  max-width: 1200px;
-  position: relative;
-  overflow: hidden;
-  padding-top: 30px;
-  padding-left: 120px;
-  padding-bottom: 140px;
+.list-item {
+  padding-bottom: 31px;
 }
 
 .btn:hover {
@@ -310,6 +312,9 @@ body {
   font-size: 16px;
   line-height: 169%;
   color: #4f4f4f;
+}
+.icon-person {
+  display: flex;
 }
 
 .person-review {
@@ -359,6 +364,9 @@ body {
 .swiper-pagination-total {
   font-weight: 700;
 }
+
+/* Questions */
+
 .div-questions {
   padding-left: 120px;
 }
@@ -369,6 +377,12 @@ body {
   line-height: 118%;
   color: #333;
   margin-bottom: 60px;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ac-container {
@@ -413,4 +427,95 @@ body {
   font-size: 16px;
   line-height: 169%;
   color: #4f4f4f;
+}
+
+/* Contact  */
+
+.contact-section {
+  background-color: #6248ff08;
+  padding: 120px;
+  margin-top: 140px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 130px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  width: 483px;
+}
+
+.contact-info h2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 118%;
+  color: #333;
+}
+.address-text {
+  margin-top: 48px;
+}
+.address-item-info {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 107%;
+  color: #333;
+}
+.address-link {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  color: #4f4f4f;
+}
+
+.contact-details li {
+  margin-bottom: 12px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border: 2px solid #7a5af8;
+  border-radius: 16px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  background-color: #7a5af8;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #654de0;
 }
