@@ -27,6 +27,15 @@ h3,
 h4 p {
   margin: 0;
 }
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
 button:active {
   background: #354bf4;
 }
@@ -87,13 +96,20 @@ body {
   align-items: center;
   gap: 24px;
 }
-.land {
+.lang {
   font-family: var(--font-family);
   border: 1px solid #000;
   border-radius: 60px;
   padding: 10px 16px;
   width: 80px;
   height: 40px;
+  background-image: url("data:image/svg+xml;utf8,<svg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8.418 0.858849C8.54813 0.729996 8.72387 0.657715 8.907 0.657715C9.09013 0.657715 9.26586 0.729996 9.396 0.858849C9.46025 0.922122 9.51127 0.997543 9.5461 1.08072C9.58093 1.1639 9.59886 1.25317 9.59886 1.34335C9.59886 1.43352 9.58093 1.5228 9.5461 1.60598C9.51127 1.68915 9.46025 1.76458 9.396 1.82785L5.488 5.65785C5.35757 5.78652 5.18172 5.85866 4.9985 5.85866C4.81528 5.85866 4.63943 5.78652 4.509 5.65785L0.600999 1.82785C0.536749 1.76458 0.485726 1.68915 0.450899 1.60598C0.416071 1.5228 0.398136 1.43352 0.398136 1.34335C0.398136 1.25317 0.416071 1.1639 0.450899 1.08072C0.485726 0.997543 0.536749 0.922122 0.600999 0.858849C0.731133 0.729996 0.906866 0.657715 1.09 0.657715C1.27313 0.657715 1.44886 0.729996 1.579 0.858849L5 3.99985L8.418 0.858849Z' fill='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+.lang:hover {
+  border: 1px solid #7181fc;
 }
 
 .header-btn {
@@ -112,7 +128,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap; /* щоб текст не переносився */
+  white-space: nowrap;
 }
 
 .header-btn:hover {
@@ -120,8 +136,6 @@ body {
 }
 
 .hero {
-  /* display: flex;
-  justify-content: space-between; */
   position: relative;
   overflow: hidden;
   min-height: 720px;
@@ -172,7 +186,7 @@ body {
   border-radius: 60px;
   padding: 20px 64px;
   background: #6248ff;
-  white-space: nowrap; /* щоб текст не переносився */
+  white-space: nowrap;
   display: inline-block;
   border: none;
 
@@ -213,7 +227,7 @@ body {
   font-size: 56px;
   line-height: 118%;
   color: #333;
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 483px;
   padding-bottom: 60px;
 }
@@ -359,10 +373,11 @@ body {
 
 .swiper-pagination {
   position: absolute;
+  text-align: start !important;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  color: #6248ff;
+  color: #6248ff !important;
   font-weight: 600;
   font-size: 16px;
   z-index: 10;
