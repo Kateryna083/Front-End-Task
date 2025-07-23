@@ -483,39 +483,115 @@ body {
 
 .contact-form {
   background: #fff;
-  padding: 30px;
+  padding: 80px;
   border: 2px solid #7a5af8;
-  border-radius: 16px;
+  border-radius: 20px;
   flex: 1;
-  min-width: 300px;
+  width: 585px;
+  height: 471px;
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 12px;
-  border: 1px solid #ddd;
+  padding: 7px 16px;
+  border: 1px solid #e0e0e0;
   border-radius: 6px;
-  font-size: 14px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  color: #828282;
 }
 
 .contact-form button {
-  background-color: #7a5af8;
+  width: 172px;
+  height: 54px;
+  background: #6248ff;
   color: white;
   border: none;
-  padding: 12px 0;
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 24px;
+  border-radius: 60px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-form button:hover {
   background-color: #654de0;
+}
+
+/* Footer */
+
+.footer {
+  padding: 32px 120px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-info {
+  max-width: 380px;
+}
+
+.footer-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  color: #333;
+  margin: 0;
+}
+
+.footer-text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  color: #4f4f4f;
+}
+.footer-menu-item {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 107%;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.footer-link-info {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin-top: 48px;
+}
+.footer-list {
+  display: flex;
+  gap: 66px;
+}
+.footer-text-info {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  color: #828282;
+  margin: 0;
+}
+.footer-item {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  color: #828282;
 }
