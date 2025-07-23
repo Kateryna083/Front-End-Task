@@ -27,6 +27,14 @@ h3,
 h4 p {
   margin: 0;
 }
+button:active {
+  background: #354bf4;
+}
+button:disabled {
+  background: #e0e0e0;
+  color: #828282;
+  cursor: not-allowed;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -481,6 +489,22 @@ body {
   margin-bottom: 12px;
 }
 
+input:focus,
+textarea:focus {
+  border: 1px solid #828282;
+  outline: none;
+}
+
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  border: 1px solid #0eac00;
+}
+
+input.error,
+textarea.error {
+  border: 1px solid #eb5757;
+}
+
 .contact-form {
   background: #fff;
   padding: 80px;
@@ -488,7 +512,7 @@ body {
   border-radius: 20px;
   flex: 1;
   width: 585px;
-  height: 471px;
+  /* height: 47auto1px; */
 }
 
 .contact-form form {
@@ -512,7 +536,7 @@ body {
 .contact-form button {
   width: 172px;
   height: 54px;
-  background: #6248ff;
+  background: #4f62f6;
   color: white;
   border: none;
   font-weight: bold;
@@ -526,7 +550,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #654de0;
+  background: #7181fc;
 }
 
 /* Footer */
